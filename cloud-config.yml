@@ -1,0 +1,5 @@
+#cloud-config
+
+users:
+  - name: jschott2
+    coreos-ssh-import-github: jschott2
