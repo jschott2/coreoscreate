@@ -1,10 +1,7 @@
 #cloud-config
 
-hostname: coreos0
+hostname: coreos1
 
-#################################
-# userpassword hash from shadow #
-#################################
 users:
 - name: jschott
   passwd: $6$eEVBZ5DIeBJ$faXKow6cCMnpKdT7.Ylzt3bBEhHtRQ.Shi.vqO0/YZUA12OiT3n3Rkn4czdfAftuPoJBD6XQCybE0EtBIZUXt0
@@ -16,3 +13,13 @@ users:
   groups:
     - sudo
     - docker
+- name: test2
+  groups:
+    - sudo
+    - docker
+- name: test3
+  groups:
+    - sudo
+    - docker
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkiJm+IEZPhmdPgXpTvYFEfM0oriuCyTGgtAnNabPtylvliwhZNh8+o7g1Gs4xvkN8aAji3nyrKRk2MCsgARBqZR053TNdaaV4kb60kSiA0Dh6Vwt82Mcx7+mf+d3YZAN/BleI5gTX/KCbFxE5ryo0oR7dMx8p8N1RU42/hrKXEX0bC6eet9ku6NsOkW1cDDPsLJOudO0nXwWvVTvobPF22Ifgm5mN/V/dJdWxr1KMNSDibsAvutf2Pon1TtgNWDSpzTQoaclMtWbHM/4WiFz0Sx8vfnE/mBz1UpjVvuRIFmFr9OpKs2c2ckEqjimszMPeOJNvp+HpMBym2mm1S7amw
