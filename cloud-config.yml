@@ -14,10 +14,12 @@ users:
     - sudo
     - docker
 - name: test2
+  passwd: $6$kS8b/9b.%jg4NEzl6Fxr7xg2xbmUrgJJxU3JqeSAlhQBXpg5IuG0UjhKAkUyMob6sH9Wjt7iJ/ln/.W2WdXudT5Uwyv22R0
   groups:
     - sudo
     - docker
 - name: test3
+  passwd: 
   groups:
     - sudo
     - docker
